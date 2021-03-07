@@ -1,0 +1,16 @@
+/*  */
+#about {
+  margin: 6rem auto;
+  width: 80%;
+  text-align: center;
+}
+
+#about .row {
+  display: flex;
+  align-items: center;
+}
+
+#about h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}

@@ -1,0 +1,55 @@
+/*  */
+#contact {
+  margin: 6rem auto;
+  min-width: 280px;
+  width: 50%;
+}
+
+#contact h2 {
+  margin-bottom: 3.5rem;
+}
+
+#contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  gap: 10px;
+}
+
+.method {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  border: 2px solid var(--textcolor-inactive);
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+}
+
+.method i {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.contact-direction-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-semi-dark);
+  transform: rotateX(90deg);
+  transition: transform 0.5s ease;
+}
+
+.contact-direction {
+  color: var(--textcolor-hover);
+  font-weight: bold;
+}
+
+.method:hover .contact-direction-container {
+  transform: rotateX(0);
+}
