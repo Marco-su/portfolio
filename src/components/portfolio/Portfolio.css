@@ -42,6 +42,38 @@
   transform: translateY(0);
 }
 
+.project-info-container h4,
 .project-info-container p {
+  margin-bottom: 0.3rem;
+}
+
+.project-info-container p {
+  color: var(--textcolor-hover);
+}
+
+.project-info-container .project-info {
+  width: 75%;
+}
+
+#portfolio .button-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#portfolio button {
+  margin: 0.1rem;
+  background: var(--background-dark);
+  border: none;
+  min-width: max-content;
+}
+
+#portfolio button a {
+  color: var(--textcolor-inactive);
+  text-decoration: none;
+}
+
+#portfolio button a:hover {
   color: var(--textcolor-hover);
 }
