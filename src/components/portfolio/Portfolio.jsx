@@ -2,6 +2,7 @@ import "./Portfolio.css";
 
 import project from "../../assets/img/project.png";
 import app_notes from "../../assets/img/app-notes.png";
+import app_qr from "../../assets/img/app-qr.png";
 
 const Portfolio = () => {
   return (
@@ -10,20 +11,28 @@ const Portfolio = () => {
       <div id="all-projects">
         <div className="project">
           <figure>
-            <img className="project-img img-thumbnail" src={project} alt="" />
+            <img className="project-img img-thumbnail" src={app_qr} alt="" />
           </figure>
           <div className="project-info-container">
             <div className="project-info">
               <h4 className="text-white">QR App</h4>
-              <p>Use this QR generator.</p>
+              <p>Read and generate QR codes.</p>
               <div className="button-container">
                 <button>
-                  <a href="/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://marco-su.github.io/app-qr/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="fas fa-external-link-alt"></i> Website
                   </a>
                 </button>
                 <button>
-                  <a href="/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://github.com/Marco-su/app-qr"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="fab fa-github"></i> Repository
                   </a>
                 </button>
