@@ -3,12 +3,49 @@ import "./Portfolio.css";
 import app_notes from "../../assets/img/app-notes.png";
 import app_qr from "../../assets/img/app-qr.png";
 import app_weather from "../../assets/img/app-weather.png";
+import app_gifs from "../../assets/img/app-gifs.png";
 
 const Portfolio = () => {
   return (
     <div id="portfolio">
       <h2 className="my-3">Portfolio</h2>
       <div id="all-projects">
+        <div className="project">
+          <figure>
+            <img
+              className="project-img img-thumbnail"
+              src={app_gifs}
+              alt="Gifs-app"
+            />
+          </figure>
+          <div className="project-info-container">
+            <div className="project-info">
+              <h4 className="text-white">Gif finder</h4>
+              <p>Search gifs with the largest database of its kind.</p>
+              <div className="button-container">
+                <button>
+                  <a
+                    href="https://marco-su.github.io/app-gifs/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fas fa-external-link-alt"></i> Website
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/Marco-su/app-gifs"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-github"></i> Repository
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="project">
           <figure>
             <img
