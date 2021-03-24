@@ -17,7 +17,7 @@
   font-size: 1.7rem;
 }
 
-h1 {
+#home h1 {
   font-size: 3.3rem;
   color: var(--textcolor-hover);
   font-weight: bold;

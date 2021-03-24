@@ -3,7 +3,7 @@
   padding: 2rem;
 }
 
-#me {
+#about-me .me {
   color: var(--textcolor-hover);
   font-size: 1.3rem;
   font-weight: bold;

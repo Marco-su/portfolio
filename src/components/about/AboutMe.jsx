@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <div id="about-me">
       <h3>Who I am?</h3>
-      <p id="me">I am Marco Subero, a full stack web developer.</p>
+      <p className="me">I am Marco Subero, a full stack web developer.</p>
       <p>
         I enjoy the development of frontend and backend projects using different
         technologies, which allow the future growth of the applications.

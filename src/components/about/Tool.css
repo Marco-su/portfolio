@@ -1,0 +1,35 @@
+/*  */
+#dev-tools .dev-tool-container {
+  border: 2px solid var(--textcolor-inactive);
+  border-radius: 0.3rem;
+  padding: 1.5rem 0;
+  transition: 0.4s;
+}
+
+#dev-tools .dev-tool-container:hover {
+  background: var(--textcolor-inactive);
+  border-radius: 0.6rem;
+}
+
+#dev-tools i {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#dev-tools span {
+  margin-left: 0.3rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 981px) {
+  #dev-tools i {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  #dev-tools i {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}

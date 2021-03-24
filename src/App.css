@@ -8,8 +8,8 @@
   --background-transparent: rgb(34, 34, 34, 0.8);
 }
 
-.App{
-  animation: fade 1.5s;
+.App {
+  animation: fade 1.3s;
 }
 
 h2 {
@@ -20,6 +20,10 @@ h2 {
 }
 
 @keyframes fade {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
