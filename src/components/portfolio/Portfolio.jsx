@@ -3,7 +3,7 @@ import "./Portfolio.css";
 import app_notes from "../../assets/img/app-notes.png";
 import app_qr from "../../assets/img/app-qr.png";
 import app_weather from "../../assets/img/app-weather.png";
-import app_gifs from "../../assets/img/app-gifs.png";
+import app_gifs from "../../assets/img/app-gifs.jpg";
 
 import Project from "./Project";
 
