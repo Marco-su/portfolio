@@ -4,7 +4,7 @@ import ContactInfo from "./ContactInfo";
 const Contact = () => {
   return (
     <div id="contact">
-      <h2>Contact</h2>
+      <h2 className="subtitle">Contact</h2>
       <div className="contact-methods">
         <ContactInfo
           icon={<i className="fas fa-envelope"></i>}
@@ -18,6 +18,7 @@ const Contact = () => {
           info="+584268062855"
         />
       </div>
+      <div className="aaa"></div>
     </div>
   );
 };

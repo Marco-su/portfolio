@@ -1,25 +1,75 @@
 /*  */
 #home {
+  position: relative;
+  align-items: center;
+  /* prettier-ignore */
+  background: linear-gradient(to right, #b35c10, var(--base-orange), #b35c10);
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url("../../assets/img/laptop.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: var(--background-dark);
+  perspective: 1000px;
+  text-align: center;
+}
+#home .greet-text {
+  color: var(--light-text);
+  cursor: default;
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5.5rem;
+  font-weight: 700;
+  margin: 0;
+  max-width: 1200px;
+  transition: 0.5s;
+  z-index: 1;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+#home span[class="greet-text"]:hover {
+  transform: translateX(-15px) rotateY(20deg);
+}
+#home h1:hover {
+  transform: translateX(15px) rotateY(-20deg);
 }
 
-#home span {
-  color: var(--textcolor-light);
-  font-size: 1.7rem;
-}
+/* Decoration */
 
-#home h1 {
-  font-size: 3.3rem;
-  color: var(--textcolor-hover);
-  font-weight: bold;
+#home .decorative {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  left: 0;
+  bottom: 0;
+  /* prettier-ignore */
+  background: linear-gradient(to right, var(--main-background), #02022c, var(--main-background));
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  animation: showScaleY 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+  transform: scaleY(0);
+  transform-origin: bottom;
+}
+#home .decorative::after,
+#home::before {
+  content: "";
+  position: absolute;
+  opacity: 0;
+}
+#home::before {
+  left: 10%;
+  top: 20%;
+  width: 15vmax;
+  height: 15vmax;
+  border: 5px solid #02022c;
+  animation: spinRight 25s linear infinite, fadeIn 2s ease-in-out forwards;
+  animation-delay: 3s;
+}
+#home .decorative::after {
+  right: 15%;
+  bottom: 15%;
+  width: 10vmax;
+  height: 10vmax;
+  border: 10px solid #ec7615;
+  animation: spinLeft 20s linear infinite, fadeIn 2s ease-in-out forwards;
+  animation-delay: 3s;
 }

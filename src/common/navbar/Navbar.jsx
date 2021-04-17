@@ -7,7 +7,7 @@ const Nabvar = () => {
   const [activeNavbar, setActiveNavbar] = useState(false);
 
   const changeBackground = () => {
-    if (window.scrollY > window.innerHeight / 2) {
+    if (window.scrollY > window.innerHeight) {
       setActiveNavbar(true);
     } else {
       setActiveNavbar(false);
@@ -20,10 +20,10 @@ const Nabvar = () => {
     <nav
       id="navbar"
       className={`navbar navbar-expand-lg navbar-dark ${
-        activeNavbar ? "active" : ""
+        activeNavbar ? "active-navbar" : ""
       }`}
     >
-      <div className="container-fluid">
+      <div className="container">
         <HashLink className="navbar-brand" to="#home">
           MARCO SUBERO
         </HashLink>
@@ -39,7 +39,10 @@ const Nabvar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className="elements-list collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav ms-auto">
             <li>
               <HashLink className="nav-link" to="#home">

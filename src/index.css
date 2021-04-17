@@ -1,9 +1,60 @@
 /*  */
+:root {
+  --main-background: #02021e;
+  --light-text: #fefefe;
+  --gray-text: #80808e;
+  --base-orange: #ec7615;
+}
+html {
+  background: linear-gradient(to right, #b35c10, var(--base-orange), #b35c10);
+}
 body {
-  box-sizing: border-box;
-  margin: 0;
+  background: linear-gradient(
+    to right,
+    var(--main-background),
+    #02022c,
+    var(--main-background)
+  );
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+@keyframes showScaleY {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spinLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-359deg);
+  }
+}
+@keyframes spinRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
 }

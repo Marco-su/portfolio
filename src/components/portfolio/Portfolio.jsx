@@ -10,9 +10,9 @@ import Project from "./Project";
 const Portfolio = () => {
   return (
     <div id="portfolio">
-      <h2 className="my-3">Portfolio</h2>
+      <h2 className="subtitle">Projects</h2>
 
-      <div className="all-projects">
+      <div className="all-projects container">
         <Project
           imageSrc={app_gifs}
           title="Gif finder"

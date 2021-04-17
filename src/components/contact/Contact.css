@@ -1,16 +1,35 @@
 /*  */
 #contact {
-  margin: 6rem auto;
-  min-width: 280px;
-  width: 50%;
+  /* prettier-ignore */
+  background: linear-gradient(to right, #b35c10, var(--base-orange), #b35c10);
+  position: relative;
+  padding-bottom: 4rem;
 }
-
 #contact h2 {
-  margin-bottom: 3.5rem;
+  position: relative;
+  margin-bottom: 5rem;
+}
+#contact .contact-methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-#contact .contact-methods {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-  gap: 10px;
+/* Decoration */
+
+#contact::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+  background: linear-gradient(
+    to right,
+    var(--main-background),
+    #02022c,
+    var(--main-background)
+  );
 }

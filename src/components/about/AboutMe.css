@@ -1,10 +1,55 @@
 /*  */
-#about-me {
-  padding: 2rem;
+#about .about-me {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+#about .about-me .info-content {
+  transition: 0.5s;
+}
+#about .about-me p {
+  color: var(--gray-text);
+}
+#about .about-me img {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  clip-path: circle(45% at center 45%);
+  opacity: 0;
+  transition: 0.5s;
+}
+#about .about-me .me-button {
+  background: rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0.3rem;
+  padding: 0.7rem 1.6rem;
+  cursor: pointer;
+  color: var(--light-text);
+  margin-top: 2rem;
+  width: max-content;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+#about .about-me .me-button:hover ~ img {
+  opacity: 1;
 }
 
-#about-me .me {
-  color: var(--textcolor-hover);
-  font-size: 1.3rem;
-  font-weight: bold;
+#about .about-me .me-button:hover ~ div {
+  opacity: 0;
+}
+
+#about .about-me .me-button:hover {
+  opacity: 1;
+}
+#about .about-me .me-button i {
+  margin-left: 0.5rem;
 }

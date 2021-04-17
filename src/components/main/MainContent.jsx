@@ -1,3 +1,4 @@
+import React from "react";
 import AboutContainer from "../about/AboutContainer";
 import Contact from "../contact/Contact";
 import Greeting from "../greeting/Greeting";
@@ -6,10 +7,16 @@ import Portfolio from "../portfolio/Portfolio";
 const Main = () => {
   return (
     <>
-      <Greeting />
+      <React.StrictMode>
+        <Greeting />
+      </React.StrictMode>
+
       <AboutContainer />
-      <Portfolio />
-      <Contact />
+
+      <React.StrictMode>
+        <Portfolio />
+        <Contact />
+      </React.StrictMode>
     </>
   );
 };

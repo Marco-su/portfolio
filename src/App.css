@@ -1,29 +1,8 @@
-/* ----------------------- VARIABLES ----------------------- */
-:root {
-  --textcolor-inactive: #b9b9b9;
-  --textcolor-light: #ffffff;
-  --textcolor-hover: #0077b6;
-  --background-dark: #222;
-  --background-semi-dark: rgb(34, 34, 34, 0.96);
-  --background-transparent: rgb(34, 34, 34, 0.8);
-}
-
-.App {
-  animation: fade 1.3s;
-}
-
-h2 {
+.subtitle {
   text-align: center;
+  font-size: 5rem;
   font-weight: bold;
-  font-size: 2.4rem;
-  letter-spacing: 0.1rem;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  color: var(--light-text);
+  letter-spacing: 3px;
+  margin-bottom: 8rem;
 }

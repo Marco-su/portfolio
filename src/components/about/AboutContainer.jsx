@@ -4,13 +4,12 @@ import DevTools from "./DevTools";
 
 const AboutContainer = () => {
   return (
-    <div id="about">
-      <h2 className="my-3">About</h2>
+    <div id="about" className="container">
       <div className="row">
-        <div className="col-md-6">
+        <div className="info col-lg-6">
           <AboutMe />
         </div>
-        <div className="col-md-6">
+        <div className=" col-lg-6">
           <DevTools />
         </div>
       </div>

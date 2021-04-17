@@ -10,12 +10,9 @@ const Project = ({
   return (
     <div className="project">
       <figure>
-        <img
-          className="project-img img-thumbnail"
-          src={imageSrc}
-          alt="QR-app"
-        />
+        <img className="project-img" src={imageSrc} alt={title} />
       </figure>
+
       <div className="project-info-container">
         <div className="project-info">
           <h4 className="text-white">{title}</h4>

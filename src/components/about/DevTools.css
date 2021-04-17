@@ -6,17 +6,5 @@
 #dev-tools .tools {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
-}
-
-/* media queries */
-
-@media only screen and (min-width: 768px) and (max-width: 981px) {
-  #dev-tools {
-    padding: 2rem 4.5rem;
-  }
-  #dev-tools .tools {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 5px;
-  }
+  gap: 1rem;
 }

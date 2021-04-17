@@ -1,16 +1,22 @@
 /*  */
 #about {
-  margin: 6rem auto;
-  width: 80%;
+  position: relative;
   text-align: center;
+  padding: 2rem 0;
+  margin-bottom: 10rem;
 }
-
-#about .row {
+#about .info {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-
 #about h3 {
-  font-size: 1.3rem;
-  font-weight: bold;
+  color: var(--light-text);
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 991px) {
+  #about .info {
+    margin-bottom: 3rem;
+  }
 }

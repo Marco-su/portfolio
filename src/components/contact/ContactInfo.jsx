@@ -3,9 +3,12 @@ import "./ContactInfo.css";
 const ContactInfo = ({ icon, method, info }) => {
   return (
     <div className="method">
-      {icon}
-      <span>{method}</span>
-      <div className="contact-info-container">
+      <div className="icon">
+        {icon}
+        <span>{method}</span>
+      </div>
+
+      <div className="info-container">
         <span className="contact-info">{info}</span>
       </div>
     </div>

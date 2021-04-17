@@ -1,12 +1,13 @@
 /*  */
-#portfolio {
-  margin: 6rem auto;
-  width: 80%;
-}
-
 #portfolio .all-projects {
-  margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 2rem;
+  margin-bottom: 7rem;
+}
+@media screen and (max-width: 380px) {
+  #portfolio .all-projects {
+    padding: 0;
+  }
 }
