@@ -34,6 +34,10 @@
   align-items: center;
   justify-content: center;
 }
+#contact a.method-link {
+  color: var(--light-text);
+  text-decoration: none;
+}
 #contact .method:hover .info-container {
   transform: rotateX(0);
 }

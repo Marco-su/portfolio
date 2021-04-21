@@ -10,12 +10,14 @@ const Contact = () => {
           icon={<i className="fas fa-envelope"></i>}
           method="Email"
           info="marco_subero1996@hotmail.com"
+          href="mailto:marco_subero1996@hotmail.com"
         />
 
         <ContactInfo
           icon={<i className="fab fa-whatsapp"></i>}
           method="WhatsApp"
           info="+584268062855"
+          href="https://wa.link/libzsn"
         />
       </div>
       <div className="aaa"></div>
