@@ -3,10 +3,6 @@
   --main-background: #02021e;
   --light-text: #fefefe;
   --gray-text: #80808e;
-  --base-orange: #ec7615;
-}
-html {
-  background: linear-gradient(to right, #b35c10, var(--base-orange), #b35c10);
 }
 body {
   background: linear-gradient(

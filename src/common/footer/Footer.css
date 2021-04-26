@@ -1,9 +1,9 @@
 /*  */
 #footer {
-  background: linear-gradient(to right, #b35c10, var(--base-orange), #b35c10);
   text-align: center;
 }
 #footer p {
   margin-bottom: 0.2rem;
   font-size: 0.8rem;
+  color: var(--light-text);
 }
