@@ -1,7 +1,7 @@
 export const mouseCoords = (posX, posY) => {
   let scrollY = window.scrollY;
 
-  if (scrollY < window.innerHeight) {
+  if (scrollY < (2 * window.innerHeight) / 3) {
     const origenX = window.innerWidth / 2;
     const origenY = window.innerHeight / 2;
     const coordX = posX - origenX;

@@ -46,6 +46,7 @@
   border-left: 30px solid rgba(255, 255, 255, 0.4);
   border-bottom: 30px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%;
+  transition: transform 0.1s;
 }
 #circulo-grande {
   position: absolute;
@@ -58,6 +59,7 @@
   border-right: 8px solid rgba(255, 255, 255, 0.4);
   border-top: 8px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%;
+  transition: transform 0.2s;
 }
 
 /* ----------- LETRAS ----------- */
@@ -120,6 +122,7 @@
   height: 1px;
   background-color: rgba(255, 255, 255, 0.4);
   transform-origin: right;
+  transition: transform 0.1s;
 }
 #home .home-content .lines:nth-child(16) {
   position: absolute;
@@ -129,11 +132,12 @@
   height: 1px;
   background-color: rgba(255, 255, 255, 0.4);
   transform-origin: left;
+  transition: transform 0.1s;
 }
 
 /* ----------- MENSAJES ----------- */
 
-#home .home-content .text:nth-child(17) {
+#question-message {
   position: absolute;
   left: 50%;
   top: calc(50% - 250px);
@@ -143,8 +147,9 @@
   letter-spacing: 7px;
   font-weight: bold;
   text-transform: uppercase;
+  transition: transform 0.1s;
 }
-#home .home-content .text:nth-child(18) {
+#slogan-mesagge {
   position: absolute;
   left: 45%;
   bottom: calc(50% - 250px);
@@ -153,8 +158,9 @@
   letter-spacing: 3px;
   text-transform: uppercase;
   max-width: 450px;
+  transition: transform 0.1s;
 }
-#home .home-content .text:nth-child(19) {
+#lateral-message {
   position: absolute;
   left: 20%;
   top: calc(50% + 180px);
@@ -163,6 +169,7 @@
   font-size: 12px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  transition: transform 0.1s;
 }
 #home .home-content .developer-text {
   position: absolute;
@@ -190,16 +197,16 @@
 
 /* ----------- MEDIA QUERIES ----------- */
 @media screen and (max-width: 1100px) {
-  #home .home-content .text:nth-child(19) {
-    left: 10%;
+  #lateral-message {
+    left: 8%;
   }
 }
 @media screen and (max-width: 550px) {
-  #home .home-content .text:nth-child(17) {
+  #question-message {
     font-size: 16px;
     top: calc(50% - 275px);
   }
-  #home .home-content .text:nth-child(19) {
+  #lateral-message {
     left: 0;
   }
 }

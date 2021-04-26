@@ -91,7 +91,7 @@ const Greeting = () => {
         ></span>
 
         <span
-          className="text"
+          id="question-message"
           style={{
             // prettier-ignore
             transform: `translate(calc(-50% + ${mouseCoordinates.coordX * 0.04}px), ${-mouseCoordinates.coordY * 0.04}px)`,
@@ -101,7 +101,7 @@ const Greeting = () => {
         </span>
 
         <span
-          className="text"
+          id="slogan-mesagge"
           style={{
             // prettier-ignore
             transform: `translate(${mouseCoordinates.coordX * 0.05}px, ${-mouseCoordinates.coordY * 0.07}px)`,
@@ -111,7 +111,7 @@ const Greeting = () => {
         </span>
 
         <span
-          className="text"
+          id="lateral-message"
           style={{
             // prettier-ignore
             transform: `translate(${mouseCoordinates.coordX * 0.12}px, ${-mouseCoordinates.coordY * 0.12}px) rotate(-90deg)`,
