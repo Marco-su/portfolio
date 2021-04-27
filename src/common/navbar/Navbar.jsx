@@ -55,6 +55,11 @@ const Nabvar = () => {
               </HashLink>
             </li>
             <li>
+              <HashLink className="nav-link" to="#services">
+                Services
+              </HashLink>
+            </li>
+            <li>
               <HashLink className="nav-link" to="#portfolio">
                 Portfolio
               </HashLink>
