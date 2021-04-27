@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c8995af4.chunk.css",
-    "main.js": "/portfolio/static/js/main.1ec23295.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.1ec23295.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.9a7e9476.chunk.css",
+    "main.js": "/portfolio/static/js/main.cedc60af.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.cedc60af.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.a9f76519.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.a9f76519.js.map",
     "static/js/2.9199c8db.chunk.js": "/portfolio/static/js/2.9199c8db.chunk.js",
     "static/js/2.9199c8db.chunk.js.map": "/portfolio/static/js/2.9199c8db.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.c8995af4.chunk.css.map": "/portfolio/static/css/main.c8995af4.chunk.css.map",
+    "static/css/main.9a7e9476.chunk.css.map": "/portfolio/static/css/main.9a7e9476.chunk.css.map",
     "static/js/2.9199c8db.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9199c8db.chunk.js.LICENSE.txt",
-    "static/media/app-gifs.f4b98c36.jpg": "/portfolio/static/media/app-gifs.f4b98c36.jpg",
-    "static/media/app-notes.e944f478.png": "/portfolio/static/media/app-notes.e944f478.png",
-    "static/media/app-qr.b907b09a.png": "/portfolio/static/media/app-qr.b907b09a.png",
-    "static/media/app-weather.ab23c5c2.png": "/portfolio/static/media/app-weather.ab23c5c2.png",
+    "static/media/AboutContainer.css": "/portfolio/static/media/about.10320e3a.jpg",
+    "static/media/computer.46a82e20.svg": "/portfolio/static/media/computer.46a82e20.svg",
+    "static/media/database.b5b73d6d.svg": "/portfolio/static/media/database.b5b73d6d.svg",
+    "static/media/gifs.3623fcb3.svg": "/portfolio/static/media/gifs.3623fcb3.svg",
     "static/media/greet.57611b6b.jpg": "/portfolio/static/media/greet.57611b6b.jpg",
-    "static/media/me.24dd1ecd.jpg": "/portfolio/static/media/me.24dd1ecd.jpg"
+    "static/media/notes.152ba744.svg": "/portfolio/static/media/notes.152ba744.svg",
+    "static/media/qr.b2048344.svg": "/portfolio/static/media/qr.b2048344.svg",
+    "static/media/temperature.d8224c67.svg": "/portfolio/static/media/temperature.d8224c67.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a9f76519.js",
     "static/js/2.9199c8db.chunk.js",
-    "static/css/main.c8995af4.chunk.css",
-    "static/js/main.1ec23295.chunk.js"
+    "static/css/main.9a7e9476.chunk.css",
+    "static/js/main.cedc60af.chunk.js"
   ]
 }
