@@ -4,13 +4,13 @@ import { HashLink } from "react-router-hash-link";
 import "./Navbar.css";
 
 const Nabvar = () => {
-  const [activeNavbar, setActiveNavbar] = useState(false);
+  const [opacity, setOpacity] = useState(0);
 
   const changeBackground = () => {
     if (window.scrollY > window.innerHeight) {
-      setActiveNavbar(true);
+      setOpacity(1);
     } else {
-      setActiveNavbar(false);
+      setOpacity(0);
     }
   };
 
@@ -19,14 +19,14 @@ const Nabvar = () => {
   return (
     <nav
       id="navbar"
-      className={`navbar navbar-expand-lg navbar-dark ${
-        activeNavbar ? "active-navbar" : ""
-      }`}
+      className="navbar navbar-expand-lg navbar-dark"
+      style={{ opacity: opacity }}
     >
       <div className="container">
         <HashLink className="navbar-brand" to="#home">
           MARCO SUBERO
         </HashLink>
+        S
         <button
           className="navbar-toggler"
           type="button"
@@ -38,7 +38,6 @@ const Nabvar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-
         <div
           className="elements-list collapse navbar-collapse"
           id="navbarSupportedContent"

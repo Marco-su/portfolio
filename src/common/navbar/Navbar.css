@@ -2,16 +2,14 @@
 #navbar {
   position: fixed;
   top: 0;
-  transition: 0.3s;
+  transition: 0.4s;
   width: 100%;
   z-index: 999;
+  background: rgba(0, 0, 0, 0.6);
 }
 #navbar .elements-list ul li {
   margin-right: 5px;
 }
 #navbar .elements-list ul li:last-child {
   margin-right: 0;
-}
-.active-navbar {
-  background: rgba(0, 0, 0, 0.5);
 }
