@@ -1,61 +1,43 @@
 /*  */
 #portfolio .project {
-  overflow: hidden;
-  position: relative;
+  background: var(--light-text);
+  width: 300px;
+  padding: 2rem;
+  text-align: center;
+  margin: 1rem;
+  margin: 0 auto;
 }
-#portfolio .project figure {
-  margin: 0;
+#portfolio .project img {
+  width: 80%;
+  margin-bottom: 1rem;
 }
-#portfolio .project figure img {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
+#portfolio .project h4 {
+  font-weight: bold;
 }
-#portfolio .project .project-info-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 14px;
-  background-color: rgba(0, 0, 0, 0.7);
-  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: 0.5s ease-out;
-}
-#portfolio .project:hover .project-info-container {
-  opacity: 1;
-}
-#portfolio .project .project-info {
-  width: 70%;
-}
-#portfolio .project .project-info p {
-  color: var(--light-text);
+#portfolio .project .description {
+  display: block;
+  margin-bottom: 1rem;
 }
 #portfolio .project .button-container {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-#portfolio .project button {
+#portfolio .project .button-container button {
   background: transparent;
   border: none;
-  transition: 0.5s;
+  transition: background-color 0.5s;
 }
-#portfolio .project button:hover {
-  background: rgba(255, 255, 255, 0.5);
-}
-#portfolio .project button a {
-  color: var(--light-text);
-  text-decoration: none;
-  transition: 0.5s;
-}
-#portfolio .project button:hover a {
+#portfolio .project .button-container button a {
   color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.5s;
 }
-#portfolio .project .button-container button:nth-child(1) {
-  margin-right: 0.5rem;
+#portfolio .project .button-container button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#portfolio .project .button-container button:hover a {
+  color: var(--light-text);
 }

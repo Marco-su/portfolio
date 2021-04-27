@@ -1,13 +1,19 @@
 /*  */
+#portfolio {
+  background: #12222d;
+  padding: 5rem;
+}
+#portfolio h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
 #portfolio .all-projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  padding: 0 2rem;
-  margin-bottom: 7rem;
 }
-@media screen and (max-width: 380px) {
-  #portfolio .all-projects {
-    padding: 0;
+@media screen and (max-width: 500px) {
+  #portfolio {
+    padding: 0rem;
   }
 }

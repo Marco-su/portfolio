@@ -7,7 +7,7 @@ const Tool = ({ icon, name }) => {
       <div className="tool-container">
         <div className="tool-content">
           <span>{icon}</span>
-          <span>{name}</span>
+          <span className="tech-name">{name}</span>
         </div>
       </div>
     </Tilt>

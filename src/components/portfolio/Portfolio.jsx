@@ -1,20 +1,20 @@
 import "./Portfolio.css";
 
-import app_notes from "../../assets/img/app-notes.png";
-import app_qr from "../../assets/img/app-qr.png";
-import app_weather from "../../assets/img/app-weather.png";
-import app_gifs from "../../assets/img/app-gifs.jpg";
+import gifsSVG from "../../assets/icons/gifs.svg";
+import notesSVG from "../../assets/icons/notes.svg";
+import qrSVG from "../../assets/icons/qr.svg";
+import temperatureSVG from "../../assets/icons/temperature.svg";
 
 import Project from "./Project";
 
 const Portfolio = () => {
   return (
     <div id="portfolio">
-      <h2 className="subtitle">Projects</h2>
+      <h2 className="subtitle">Personal projects</h2>
 
       <div className="all-projects container">
         <Project
-          imageSrc={app_gifs}
+          imageSrc={gifsSVG}
           title="Gif finder"
           description="Search gifs with the largest database of its kind."
           websiteLink="https://marco-su.github.io/app-gifs/"
@@ -22,7 +22,7 @@ const Portfolio = () => {
         />
 
         <Project
-          imageSrc={app_qr}
+          imageSrc={qrSVG}
           title="QR App"
           description="Read and generate QR codes."
           websiteLink="https://marco-su.github.io/app-qr/"
@@ -30,7 +30,7 @@ const Portfolio = () => {
         />
 
         <Project
-          imageSrc={app_weather}
+          imageSrc={temperatureSVG}
           title="Weather App"
           description="Climate information around the world."
           websiteLink="https://marco-su.github.io/app-weather/"
@@ -38,7 +38,7 @@ const Portfolio = () => {
         />
 
         <Project
-          imageSrc={app_notes}
+          imageSrc={notesSVG}
           title="Notes App"
           description="Add, modify and delete your notes."
           websiteLink="https://marco-su.github.io/app-notes/"

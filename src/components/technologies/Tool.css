@@ -1,10 +1,10 @@
 /*  */
 #dev-tools .tool-container {
-  background: rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0.3rem;
-  padding: 1.5rem 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  padding: 1.3rem 0;
   transition: 0.4s;
   color: var(--light-text);
 }
@@ -14,17 +14,24 @@
 #dev-tools .tool-content {
   transform: translateZ(15px);
   perspective: 1000px;
+  text-align: center;
 }
 #dev-tools .tool-container i {
   font-size: 3rem;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
 }
 #dev-tools span {
-  margin-left: 0.3rem;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
 }
-@media screen and (max-width: 484px) {
-  #dev-tools i {
+#dev-tools .tech-name {
+  margin-left: 0.3rem;
+}
+@media screen and (max-width: 500px) {
+  #dev-tools .tech-name {
+    display: none;
+  }
+  #dev-tools .tool-container i {
     font-size: 2rem;
   }
 }

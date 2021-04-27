@@ -1,10 +1,11 @@
 /*  */
-#dev-tools {
-  padding: 2rem;
-}
-
 #dev-tools .tools {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
+}
+@media screen and (max-width: 500px) {
+  #dev-tools .tools {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
 }

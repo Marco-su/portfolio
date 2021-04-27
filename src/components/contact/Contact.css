@@ -1,12 +1,10 @@
 /*  */
 #contact {
-  /* prettier-ignore */
-  position: relative;
-  padding-bottom: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
 }
 #contact h2 {
-  position: relative;
-  margin-bottom: 5rem;
+  text-align: center;
 }
 #contact .contact-methods {
   display: flex;

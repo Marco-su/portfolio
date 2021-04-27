@@ -1,0 +1,38 @@
+/*  */
+#technologies {
+  background: #265daa;
+  padding-top: 250px;
+  margin-top: -250px;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+#technologies .text-box {
+  width: 50%;
+  padding: 0 5rem;
+}
+#dev-tools {
+  width: 50%;
+  padding: 0 5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 980px) {
+  #technologies .text-box,
+  #dev-tools {
+    width: 100%;
+  }
+  #technologies .text-box {
+    margin-bottom: 2.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #technologies .text-box {
+    padding: 3rem 2rem;
+    margin-bottom: 0;
+  }
+  #dev-tools {
+    padding: 0 2rem;
+  }
+}

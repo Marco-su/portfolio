@@ -3,7 +3,7 @@
   position: relative;
   width: 285px;
   text-align: center;
-  margin: 1rem;
+  margin: 0.5rem 1rem;
 }
 #contact .method .icon,
 #contact .method .info-container {

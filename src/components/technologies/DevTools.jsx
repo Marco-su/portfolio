@@ -4,7 +4,6 @@ import Tool from "./Tool";
 const DevTools = () => {
   return (
     <div id="dev-tools">
-      <h3>Dev Tools</h3>
       <div className="tools">
         <Tool icon={<i className="fab fa-react"></i>} name="React.js" />
         <Tool icon={<i className="fab fa-node-js"></i>} name="Node.js" />

@@ -1,56 +1,11 @@
 /*  */
 :root {
-  --main-background: #02021e;
   --light-text: #fefefe;
-  --gray-text: #80808e;
 }
 body {
-  background: linear-gradient(
-    to right,
-    var(--main-background),
-    #02022c,
-    var(--main-background)
-  );
+  background: #083453;
   font-family: "Poppins", sans-serif;
   animation: fadeIn 0.3s ease-in-out forwards;
-}
-@keyframes showScaleY {
-  0% {
-    transform: scaleY(0);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes spinLeft {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-359deg);
-  }
-}
-@keyframes spinRight {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(359deg);
-  }
+  max-width: 2000px;
+  margin: 0 auto;
 }
