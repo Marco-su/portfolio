@@ -1,4 +1,4 @@
-import "./myServices.css";
+import "./MyServices.css";
 import frontLogo from "../../assets/icons/computer.svg";
 import backLogo from "../../assets/icons/database.svg";
 
